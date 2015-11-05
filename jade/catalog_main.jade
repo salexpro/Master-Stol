@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+    include ./includes/head.jade
+    body
+        //begin wrap
+        section.wrap
+            include ./includes/header.jade
+            //begin container
+            section.container.cat.clearfix
+                .bread
+                    a(href="#") Главная страница 
+                    | > Каталог товаров 
+                //begin content
+                section.content
+                    h2 Каталог товаров
+                    .c_cats
+                        .c_cat
+                            img(src="http://lorempixel.com/115/85", alt="")
+                            h3
+                                a(href="#") Массажные столы
+                            h4
+                                a(href="#") Двух-секционные
+                            h4
+                                a(href="#") Стационарные
+                        .c_cat
+                            img(src="http://lorempixel.com/115/85", alt="")
+                            h3
+                                a(href="#") Массажные столы
+                            h4
+                                a(href="#") Двух-секционные
+                            h4
+                                a(href="#") Стационарные
+                        .c_cat
+                            img(src="http://lorempixel.com/115/85", alt="")
+                            h3
+                                a(href="#") Массажные столы
+                            h4
+                                a(href="#") Двух-секционные
+                            h4
+                                a(href="#") Стационарные
+                 //end content
+            //end container
+            include ./includes/footer.jade
+        //end wrap

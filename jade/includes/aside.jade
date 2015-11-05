@@ -1,0 +1,19 @@
+//begin aside
+aside
+    .a_block
+        h5 Массажные столы
+        ul
+            li
+                a(href="#") Двух-секционные
+            li
+                a(href="#") Аксессуары для массажных столов
+    .a_block.filter
+        .filter_top
+            h5 Стоимость
+            input(type="text",value="4000.00")
+            |  -
+            input(type="text",value="22000.00")
+        .filter_bottom
+            input.set_filt(type="button",value="Применить фильтр")
+            input.clear_filt(type="button",value="Сбросить фильтр")
+//end aside

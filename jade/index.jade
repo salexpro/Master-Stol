@@ -1,0 +1,151 @@
+doctype html
+html(lang="ru")
+    include ./includes/head.jade
+    body
+        //begin wrap
+        section.wrap
+            include ./includes/header.jade
+            //begin container
+            section.container
+                .slider
+                    ul
+                        li
+                            img(src="http://lorempixel.com/880/380/nature/", alt="")
+                        li
+                            img(src="http://lorempixel.com/880/380/nature/", alt="")
+                        li
+                            img(src="http://lorempixel.com/880/380/nature/", alt="")
+                        li
+                            img(src="http://lorempixel.com/880/380/nature/", alt="")
+                        li
+                            img(src="http://lorempixel.com/880/380/nature/", alt="")
+                section.pref
+                    a.p_item(href="#")
+                        span
+                        h2 Сотрудничество
+                    a.p_item(href="#")
+                        span
+                        h2 Доставка по всей России
+                    a.p_item(href="#")
+                        span
+                        h2 Спецпредложение
+                section.new
+                    .new_inner
+                        h3 Новинки
+                        .new_slider
+                            .new_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.new_title(href="") Мастер - Косметик 180
+                                .new_desc Новинка 2015 года от нашего производства!
+                                a.new_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.
+                            .new_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.new_title(href="") Мастер - Косметик 180
+                                .new_desc Новинка 2015 года от нашего производства!
+                                a.new_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.
+                            .new_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.new_title(href="") Мастер - Косметик 180
+                                .new_desc Новинка 2015 года от нашего производства!
+                                a.new_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.
+                            .new_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.new_title(href="") Мастер - Косметик 180
+                                .new_desc Новинка 2015 года от нашего производства!
+                                a.new_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.
+                section.bestsell
+                    .bestsell_inner
+                        h3 Хиты продаж
+                        .bestsell_slider
+                            .bestsell_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.bestsell_title(href="") Мастер - Косметик 180
+                                .bestsell_desc Новинка 2015 года от нашего производства!
+                                a.bestsell_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.
+                            .bestsell_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.bestsell_title(href="") Мастер - Косметик 180
+                                .bestsell_desc Новинка 2015 года от нашего производства!
+                                a.bestsell_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.
+                            .bestsell_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.bestsell_title(href="") Мастер - Косметик 180
+                                .bestsell_desc Новинка 2015 года от нашего производства!
+                                a.bestsell_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.
+                            .bestsell_item.i_new
+                                img(src="http://lorempixel.com/176/128", alt="")
+                                a.bestsell_title(href="") Мастер - Косметик 180
+                                .bestsell_desc Новинка 2015 года от нашего производства!
+                                a.bestsell_buy(href="") Купить в 1 клик
+                                strong 4 200 руб.   
+                //begin news
+                section.news
+                    h3 Новости компании
+                    //begin news_inner
+                    .news_inner
+                        .n_item
+                            h4
+                                a(href="#") Название новости
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque eaque optio possimus, veritatis sapiente assumenda ullam pariatur. Enim corporis ut rem dolorum eum nulla ducimus, velit, tempora hic assumenda.
+                        .n_item
+                            img(src="http://lorempixel.com/80/75", alt="")
+                            h4
+                                a(href="#") Название новости
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque eaque optio possimus, veritatis sapiente assumenda ullam pariatur. Enim corporis ut rem dolorum eum nulla ducimus, velit, tempora hic assumenda.
+                        .n_item
+                            h4
+                                a(href="#") Название новости
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque eaque optio possimus, veritatis sapiente assumenda ullam pariatur. Enim corporis ut rem dolorum eum nulla ducimus, velit, tempora hic assumenda.
+                        .n_item
+                            img(src="http://lorempixel.com/80/75", alt="")
+                            h4
+                                a(href="#") Название новости
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque eaque optio possimus, veritatis sapiente assumenda ullam pariatur. Enim corporis ut rem dolorum eum nulla ducimus, velit, tempora hic assumenda.
+                        //begin subs
+                        .subs
+                            .s_subs
+                                h5 Будьте в курсе новостей и новых поступлений
+                                input(type="email",placeholder="укажите свой email")
+                                input(type="submit",value="Подписаться")
+                            //begin social
+                            .social
+                                h5 Мы в соцсетях
+                                a(href="#")
+                                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADk0lEQVR4Xu2bTXbaQAzH/4Lsm56g9ARNTxA+ug+8mm6TnKDpCRh6gdITJNkW0ph9+egJSk7Q9AZ0j60+AU4JsR1jPM4Q2++xwTO29BtZM9JoCCFXpd09IqY6ASUA5bC2Bt4bM3DLxPao1ewHyUd+N2rt3jEz1FJxA3XbTCQBQQQ1aFmX6z3vASir6/0inHMA9c1esTOtbQfF07FqTD2J7wAslJ+NADrYGXViCcoTB3sVD8IdgJrqXT/jkV9HZQ+U1ZA/5wCq6uqEwGL6mbkYdDpU7y+WAHq/n4vDizqC4hiHynpNNdUThyfmn8WrIQAuABxnUXsAl1RV3TGBDrMIgME/xQI4i8rfrQNyALkF5J9A7gNyJ5goAf7LwCTuI9OekhOfBmVuHarmVsmTsvp2UMA8EXMG0Iu4MKP0MxKAJ7iE6AXMbJ1WYTQAD4TO1epOACir61IRs4mOz2EnAIgl6AraUgdQbV+11p2Ty05/rD6Ezhy6wvbUAQTFHgz+NFTNTpDnlpmhiMKvKJ59kzbGABChHRRfrmZsVxXJBAACV36o5thvBN+pbplBo01GN0pbwyzAfRvkC6qqqwj0wH9EUTKsjTEAGPgzVJZswfleVaUncWsEAFHehVsPGf0zAn3ZdrT9+qcOQL7lVUFm4GnYFKh7zyJ1AFFHUUC5oGMCTqL2idPOWADL1Z/sWchPW9reaAArUWGpAMcm4E2cUTZqFoirwCI0dsZJQ0jdAiqfv/tuwrBLN0GrwP+WkPxyOHUAYfsQDO642GuHgai1ujaIjuJa0no/owCIcMz4OmxbZ8ELom6iawLjAIjiA2X51i7JvaRjAiMBpBkUGQkg6xZwOVBW4Oov6cyQURbAwI2LYjlsFqi2eh0ifNzZWUDiet+oDDQZKMt+TLGkw+LULeAxBcPu64gMdwbAYrusMCJgfxuIT74QiiP8IiFK5zqqWI23gGXhdifpkfcGwkgA860wcg7TqFjXAABT2qI+gIFSmlWriQOI840/ZZ8cQF4nmNcJZrxOUGf5yVM6tyjv9oqls10un3R8HYW8QW0a3pGZWwJeGSSYdlG83ej80JSHOul8u/Yh3OYFzP1Buzk/HHrv4KSOradt5NTRdz3t9vDoLM8uktx50aFE7Gcy9x3aO/E9Orv6UEk9ASyHp5+FYxSHB5CSg5IPMkJhNJdTZJ3BJZ0Fy7FHNKTjfJEDugUgx2QDk63/APBIUz1EuVSBAAAAAElFTkSuQmCC", alt="")
+                                a(href="#")
+                                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADCElEQVR4Xu1bPXraQBCdIRj8QRFuEPsE4QaxT2AKqINLK0XwCYJPACkgZZIaCnECmxuQE5jcAArJIH4m3wrzWfzIWsyK3SWrEo3E7puZN28kDULYUajlsu/SV5SAAgDkEeAs1FbBEwTQB4AezsF2ZuMO2LeDbcvEjR8LtVwmefoVYV4BxJyCe9t9SUQDgkTdnY6+rwOxCgDb/EnqHgHzu/+L+lcQUM+deJdBEF4AYCGfTD0ejdfD/EE0cKbe+RKEBQBH7vl1LIKR4AOQKTaqiPhN/SAWt0IiunPbX6rIvP9fhP5GGCxSAbOlRhkAf4rDVqc70TVmig0bEa90WraotRJRBzOl5qNuIkcYAAB9zJaaJOqGOt5HFwC6RPTAAzAiXgDAJx5bZqMyAMM5QfVpOv4VpuO3bXLXkq4kAIyc3KlX3mXjSzC0B4AIfrttq8wbwut2WgOw7+bfomqVSQEC+OO2rL27UG0jYDbB85F9wx5i7HVoCYCI0NeaBEV5X1cO6Doti4kXIYd2KTAnuH1qW3Uhu3/Dsw3pVWBGeDlq30TK3GypkQfCGiAIixYlpDBv/meLzXvRm1cCAKdlbT6a35IPcXWt0lPAAGAiwKTAcXMAq/ME2Aur8zwlkF17WvzBVf4SQGVE+MyrK2InQd46z7vgKDvllKABgFPpRXmW97yJgB3fcxoOiEtiLkPWcIDhAL52l5fkouwMCapGgnOgyqtKsGV1o7zqK8FSk+t9n68EAblfrMReBaI2Z9ph0w6bdvi422HDAREIGBI0JGhI0JBgFFGy83F1rUYJxoUsj1eZjakCpgpIrgKZYqOPiB94Q1a0ncwUIKK/0j+XlwxAR/rAhEwAAOh6MTJzkmbf570XHd4895MIwNCZjM+kD03JAuBlaIq5yR+bSz8gwEcer4m0kQFA8LPc1cFJCakgAQA/9FcHJ5culRAJhwTA9/xkfLF9dDYIQjJVQcTKIYjxQAAMiajuTr3668PTweT2q0OqQPQ8Ph+TWIoLACZy/PF5BNuZeHbY9Mk//TYf8Enjd04AAAAASUVORK5CYII=", alt="")
+                                a(href="#")
+                                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAE20lEQVR4Xu2bwXLTSBCG/1bkXBYXcNwqHExhnzFvkDwB4YBTe1rnCRKeAPMEMU8Q5bRlc0jyBOgNcM4xFWOniiPZwqeVrN4a2Q5KsBVJPbIVSnOVZqb765menp4ZQkgp//OtXFhzXzFjkwhlALWw/zP0rcuMPhFsZ2ye9v/6s79INpr3YaK48w6gRoaUEojCljMuvJ8H4hcAz9uDbSIcEuiRoMfMVWXwFTN2v+xsnASFuwGg2rlsAHyYOem1CkS75/Un1qzJawDK8gbRsda+MtqYx/x6NhJ8AGrOm2vO599t2C/ir6aDWyg+679+fOUDqLYHFoj+zqjB0hGL+eh8Z6NB06XuIp1est2qMzafUeXj5T4xH2Rb1HSkY6K3VOkMTgj0Kp0ust0qg0+p2hl+vkcRnm6iXQWAdbd6n9rLAeQjIJ8CuQ/InWCWvDYDX8GwYMB2zQddJZvpjmoA1cC8T8DTefKqeou+heknXwUYZyC80AGRGe97O6VmWFuV9rBJhHezf1QwA6IWedxIsp8RAVCdu4Viw3RG3ST0byp6c58eBkFt3dX38XrRVju6aueyBrAK6GIXEYDZvtoXgNlKOhKiWH6RZuXj748KzuiTimYZ/C+BHsahIALAhK3em5Lt5xSUIP+N7LgQlNBuoVhWlowjuL+N71zWPLCftzRAFoMPCNiM044IwHm99GtOsTNsGcBeVCE84MOXemk/6v+L/nses99ZOyIAwREQFKzycbhJHlpRRkMwPZUUQrUzOEyawRYBAMIdl0qyMrgZ5iAXQYwKQ6K86kMEgAG7Vy9t3SXsZERwgwnbt52UHIAskhUBmChOL8/rT/yAJUqZLFmoMXOZwGWQ0YpT/3Yf0s2cHABz31kvvkzixaMAC/tHsv5rc4J+BAbA8QrNsDM4qbLz6vtTi6FigMRFNAJUVnXZSgc11XGSJQJw1yqQ2CwRK+o4zxABiLoKRNQn9m86EroiAEpiHYFMbM2nx3mFNVd8oCMGoM7ZCMaWZClLAkDXgY4YgBJ+CuFt8Ng5iVJx6lTbgwsQqVsroqIFwEwC5ROYyRqv/3GaZlygY/nTEgf8VJyvevWNxyJTxKhc6Qw/xd32Lmpe2wiQJDVi6K5yAFpvsegDsARnqJIupvPjQudFDm0AAs4wtRWh0h4eE8HPB+oqWgFc+wRC0zUffNDpCG9ngzMNILgqEOhIujzqnvdBeKmMgGsAEfL8d1kyTeVV39oBqCwvmFquZ1rSnWKlPTggInHCNAxyIgC+kqDrLBAx99kwusSwdYTEk2t77qGutV47gInHh+2OzV2plYPC+cucO9qbnAEu56puohEQFJoZJzDY6r3ZOL1rPi/67lvccPZAaCxLca2hsN8Ycx8E22PDNghnYVNhEtCMXoB5m4jUSc7KruGLR0CY1dUu8YavANQN9JUpO0/WVAEknRLLrJcDkB4sLNNaafSVj4Bqe9iNcoqbBv2Vt8k4yy9L68qurtyaiQSg3fzBhAKn44gpkQFWWWn2ZEbJMH001Y17w2qV8kv6Dl7Myp/NBUmmnX2RWE1f3QUPJ2cdTJ/OWr/bdFDDnhmN0KezMwj+UzrDaSa5e6vPUhpbYj5y1ov787LUc1+PB0GY5ngb7G0SU/neRIyMMybuE4wTZ7xmh2Wt/gecMo79L7DBbQAAAABJRU5ErkJggg==", alt="")
+                                a(href="#")
+                                    img(src="data:image/png;base64,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", alt="")
+                            //end social
+                        //end subs
+                    //end news_inner
+                //end news
+            //end container       
+            include ./includes/footer.jade
+            script(src="/js/jquery.bxslider.min.js")
+            script.
+                //Sliders
+                $('.slider ul').bxSlider({
+                    prevText: '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAYAAAAYyi9XAAABgklEQVRIS+2WvUsDQRDF39yHCQloE2wUi5AmgtYRsbIQDGhloaX+BcFKtLGxsdA+SaGFham0s0itjY2CNioogiA2Cgk5725XZskFSdCTywYsMs0d7PJ+vDe7zFLmYF6aMRtWMg4QAVJCazU1vVoDvuOC+sCu4+1H+m9P6aCdxNLYLCpPVXy4tZ9b3W0PA9BaZhH8v365j7OXi94A2VEhu6JAXM/1V2xfFXH+dq0XOJoYRim3Bf4GoPLdiYoztKJEOpWaQDG3qbT3bo9Qvj8N5bQ2RAGOD6VxPLPT0mBn7JAjDa0oQBblOPmgcB+DYnDlsYqb9we9Pfyuxm4L2WVwzFx8aH7tZVSH7RYYuJpZUNeip/cwtGftG3Q5/DO4E5iXZpwnfgxEBCn0TnwyCFJKeDUHfoMn/mFePTHs5hODF3UWm+CB4AZPjHRpThoDFqxE02EPgMph3YH49EAju9PSsEwYMRsEQEKzQ5BSFI4L4fmg1MakJMMAmYbOJDu0pC8ghcAXg99W4O3h0dQAAAAASUVORK5CYII=" />',
+                    nextText: '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAYAAAAYyi9XAAABfUlEQVRIS+2Wv0vDUBDHv5cftrSgSxFEUahdFOziojh2KFjQqQ6utbuOurjoJNJ/QAUddHDSvZOD3QW7FAdxEheFlsYk78k9GlEboZBX6NBbQki4D9/v3XFHmfNVacZsWMk4QARICa3Ryek12/AdFzQERrZ3aOlAdemonURxOofr5yo+3GZv5Y1Sw/zEEo4XtxXstHHTGzgKcDm1gP1sGVOJcaWOwZX6pQL/G1GAQVK2tZRZ/wa/tF6xVTsAP7tCBzBIWppdw87cpnot1w5x//bQHyBbygpZaRAbd3t4fH/SC5wfS6M4k/sF4vpxA4XayfgolrIibhoOtq9SvwpX9VNnFCDPIY/FWeM2vF5hrRoF2Nuk//lrAIAFacZ548dARJBC78YngyClhNd04Ld5418U1Ilhd04M/qgzWAQvBDc4MdIneWmMWLASHYV9ACqFLQfi0wNNHq1IwzJhxGwQAAnNCkEqo3BcCM8HpXazkgwDZBo6nezKJX0BKQS+AFnsXOB5e9IcAAAAAElFTkSuQmCC" />',
+                    auto: true
+                })
+                $('.new_slider,.bestsell_slider').bxSlider({
+                    pager: false,
+                    maxSlides: 4,
+                    slideWidth: 200,
+                    slideMargin: 20,
+                    moveSlides: 1,
+                    prevText: '<',
+                    nextText: '>'
+                });
+        //end wrap
