@@ -1,0 +1,66 @@
+doctype html
+html(lang="ru")
+    include ./includes/head.jade
+    body
+        //begin wrap
+        section.wrap
+            include ./includes/header.jade
+            //begin container
+            section.container.cat.clearfix
+                .bread
+                    a(href="#") Главная страница 
+                    | > 
+                    a(href="") Каталог товаров 
+                    | > 
+                    a(href="#") Массажные столы 
+                    | > Двух - секицонные 
+                include ./includes/aside.jade
+                //begin content
+                section.content
+                    h2 Двух-секционные
+                    .c_items
+                        .catl_item.i_new
+                            img(src="http://lorempixel.com/176/128", alt="")
+                            a.catl_title(href="#") Мастер - Косметик 180
+                            .catl_desc Новинка 2015 года от нашего производства!
+                            a.catl_buy(href="#") Купить в 1 клик
+                            strong 4 200 руб.
+                        .catl_item.i_new
+                            img(src="http://lorempixel.com/176/128", alt="")
+                            a.catl_title(href="#") Мастер - Косметик 180
+                            .catl_desc Новинка 2015 года от нашего производства!
+                            a.catl_buy(href="#") Купить в 1 клик
+                            strong 4 200 руб.
+                        .catl_item.i_new
+                            img(src="http://lorempixel.com/176/128", alt="")
+                            a.catl_title(href="#") Мастер - Косметик 180
+                            .catl_desc Новинка 2015 года от нашего производства!
+                            a.catl_buy(href="#") Купить в 1 клик
+                            strong 4 200 руб.
+                        .catl_item.i_new
+                            img(src="http://lorempixel.com/176/128", alt="")
+                            a.catl_title(href="#") Мастер - Косметик 180
+                            .catl_desc Новинка 2015 года от нашего производства!
+                            a.catl_buy(href="#") Купить в 1 клик
+                            strong 4 200 руб.
+                        .catl_item.i_new
+                            img(src="http://lorempixel.com/176/128", alt="")
+                            a.catl_title(href="#") Мастер - Косметик 180
+                            .catl_desc Новинка 2015 года от нашего производства!
+                            a.catl_buy(href="#") Купить в 1 клик
+                            strong 4 200 руб.
+                        .catl_item.i_new
+                            img(src="http://lorempixel.com/176/128", alt="")
+                            a.catl_title(href="#") Мастер - Косметик 180
+                            .catl_desc Новинка 2015 года от нашего производства!
+                            a.catl_buy(href="#") Купить в 1 клик
+                            strong 4 200 руб.
+                    .pager
+                        | Страницы:<br>
+                        a.active(href="#") 1
+                        a(href="#") 2
+                        a.next(href="#") Следующая >
+                //end content
+            //end container
+            include ./includes/footer.jade
+        //end wrap

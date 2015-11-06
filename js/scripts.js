@@ -1,0 +1,22 @@
+//Hamb menu
+$('.m_hamb').click(function(){
+    $(this).toggleClass('opened');
+    $('.sch_tgg,.cart').removeClass('opened');
+    $('.menu').toggleClass('ext_menu').removeClass('ext_search');
+    $('.cart_inner').removeClass('ext_cart');
+});
+$('.sch_tgg').click(function(){
+    $(this).toggleClass('opened');
+    $('.m_hamb,.cart').removeClass('opened');
+    $('.menu').toggleClass('ext_search').removeClass('ext_menu');
+    $('.cart_inner').removeClass('ext_cart');
+});
+if($(window).width()<=480){
+    $('.cart').click(function(event){
+        event.preventDefault();
+        $(this).toggleClass('opened');
+        $('.m_hamb,.sch_tgg').removeClass('opened');
+        $('.cart_inner').toggleClass('ext_cart');
+        $('.menu').removeClass('ext_search').removeClass('ext_menu');
+    })
+}

@@ -1,0 +1,138 @@
+doctype html
+html(lang="ru")
+    include ./includes/head.jade
+    body
+        //begin wrap
+        section.wrap
+            include ./includes/header.jade
+            //begin container
+            section.container.cat.clearfix
+                .bread
+                    a(href="#") Главная страница 
+                    | > Каталог товаров 
+                //begin content
+                section.item
+                    h2 Лайт -  Мастер 180
+                    .item_top
+                        .images
+                            .main_img
+                                a.uligtbox(href="http://lorempixel.com/370/330")
+                                    img(src="http://lorempixel.com/370/330", alt="")
+                            .small_imgs
+                                a(href="javascript:void(0)")
+                                    img(src="http://lorempixel.com/85/90", alt="")
+                                a(href="javascript:void(0)")
+                                    img(src="http://lorempixel.com/85/90", alt="")
+                                a(href="javascript:void(0)")
+                                    img(src="http://lorempixel.com/85/90", alt="") 
+                            script(src="/js/jquery.bxslider.min.js")
+                            script.
+                                $('.small_imgs').bxSlider({
+                                    pager:false,
+                                    slideWidth:85,
+                                    maxSlides:3,
+                                    slideMargin: 14,
+                                    moveSlides:1,
+                                    prevText:'<',
+                                    nextText:'>'
+                                })
+                                $('.small_imgs a').click(function(){
+                                    var timg = $('img',this).attr('src'); 
+                                    $('.main_img a').attr('href',timg);
+                                    $('.main_img img').attr('src',timg);
+
+                                })
+                        //begin item_content
+                        .item_content
+                            .rating
+                            button.for_print Версия для печати
+                            .art <b>Артикул:</b> 010-00970-01
+                            .brief
+                                | Массажный стол складной выполнен с учетом всех требований безопасности по его использованию. В основе – прочная березовая фанера. Устойчивость обеспечивается за счет раскладных механизмов, выполненных из особых алюминиевых сплавов, и специальных стальных тросов в ПВХ оплетке. Переносной массажный стол выпускается в 12 цветах. Верхнее покрытие – водоустойчивый кожзаменитель.Тщательно продуманная конструкция и профессиональное исполнение гарантируют удобство в пользовании и перевозке.
+                            //begin details
+                            .details
+                                .price Цена: 
+                                    span 4300 руб.
+                                .order
+                                    input(type="button",value="В заказ")
+                                    a(href="#") Купить в 1 клик
+                                .avaliable
+                                    span Есть в наличии
+                                    | Доствака 27 мая 
+                                    | <br>от 350 руб.                            
+                            //end details
+                            .other_items
+                                p Другие модели:
+                                .o_item
+                                    img(src="http://lorempixel.com/130/110", alt="")
+                                    a(href="#") Мастер -  косметик 180
+                                    span 4 200 руб.
+                                .o_item
+                                    img(src="http://lorempixel.com/130/110", alt="")
+                                    a(href="#") Мастер -  косметик 180
+                                    span 4 200 руб.
+                                .o_item
+                                    img(src="http://lorempixel.com/130/110", alt="")
+                                    a(href="#") Мастер -  косметик 180
+                                    span 4 200 руб.
+                        //end item_content
+                    //end item_top
+                    //begin item_desc
+                    .item_desc              
+                        .item_swch
+                            a.active(href="javascript:void(0)") Описание
+                            a(href="javascript:void(0)") Характеристики
+                            a(href="javascript:void(0)") Что в комплекте?
+                            a(href="javascript:void(0)") Видео
+                            a(href="javascript:void(0)") Аксессуары
+                        .item_tabs
+                            .i_tab1.active
+                                h4 Описание
+                                | Массажный стол – в одной руке Переносной массажный стол предназначен для профессиональных массажистов, обслуживающих клиентов на дому. Вес – от 12,5 килограмма. Параметры в сложенном состоянии – 90х70х15 сантиметров. Габариты позволяют без труда разместить его в багажнике машины.Массажист может работать с максимальными для себя удобствами: высота стола регулируется от 65 до 95 сантиметров.Максимально допустимый вес пациента – 210 килограмм. Ширина массажной доски позволяет пациенту не скатываться, а специальное отверстие для лица дает возможность телу занять правильное положение и расслабиться.Особенности конструкцииМассажный стол складной выполнен с учетом всех требований безопасности по его использованию. В основе – прочная березовая фанера. Устойчивость обеспечивается за счет раскладных механизмов, выполненных из особых алюминиевых сплавов, и специальных стальных тросов в ПВХ оплетке. Переносной массажный стол выпускается в 12 цветах. Верхнее покрытие – водоустойчивый кожзаменитель.Тщательно продуманная конструкция и профессиональное исполнение гарантируют удобство в пользовании и перевозке.
+                            .i_tab2
+                                h4 Характеристики
+                                | Характеристики
+                            .i_tab3
+                                h4 Что в комплекте?
+                                | Что в комплекте?
+                            .i_tab4
+                                h4 Видео
+                                | Видео
+                            .i_tab5
+                                h4 Аксессуары
+                                .o_item
+                                    img(src="http://lorempixel.com/130/110", alt="")
+                                    a(href="#") Мастер -  косметик 180
+                                    span 4 200 руб.
+                                    input(type="button",value="В заказ")
+                                .o_item
+                                    img(src="http://lorempixel.com/130/110", alt="")
+                                    a(href="#") Мастер -  косметик 180
+                                    span 4 200 руб.
+                                    input(type="button",value="В заказ")
+                                .o_item
+                                    img(src="http://lorempixel.com/130/110", alt="")
+                                    a(href="#") Мастер -  косметик 180
+                                    span 4 200 руб.
+                                    input(type="button",value="В заказ")
+                                .o_item
+                                    img(src="http://lorempixel.com/130/110", alt="")
+                                    a(href="#") Мастер -  косметик 180
+                                    span 4 200 руб.
+                                    input(type="button",value="В заказ")
+                        //begin comm
+                        .comm
+                            | Комментарии
+                        //end comm
+                    //end item_desc
+                    script.
+                        $('.item_swch a').click(function(){
+                            $('.item_swch a').removeClass('active');
+                            $(this).addClass('active');
+                            $('.item_tabs>div').removeClass('active');
+                            $('.i_tab'+Number($(this).index()+1)).addClass('active');
+                        })
+                //end content
+            //end container
+            include ./includes/footer.jade
+        //end wrap
